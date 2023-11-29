@@ -1,38 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>FoC</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Funky Gates - Project 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 50px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            width: 100px;
+            height: 40px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #218838;
+        }
+
+        .output-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-<center>
+
+<header>
+    <h1>Funky Circuits</h1>
+</header>
+
 <section>
-<h2>Project 1: Not Gate</h2>
+    <h2>Project 1: Not Gate</h2>
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Input</h2>
-    <p><button style="width: 100px; height: 40px;" onclick="document.getElementById('belizeImage').src='noton2(1).png'">ON</button></p>
-    <p><button style="width: 100px; height: 40px;" onclick="document.getElementById('belizeImage').src='notoff2(1).png'">OFF</button></p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Output</h2>
-	<hr>
-	<img id="belizeImage" src="noton2(1).png" alt="noton" width="400" height="86" align="center">
-  </div>
-</div>
-<a href="index.html">Back to Home</a></h3>
+    <div class="button-container">
+        <div>
+            <h3>Input</h3>
+            <button onclick="document.getElementById('belizeImage').src='noton2(1).png'">ON</button>
+            <button onclick="document.getElementById('belizeImage').src='notoff2(1).png'">OFF</button>
+        </div>
+
+        <div>
+            <h3>Output</h3>
+            <hr>
+            <div class="output-container">
+                <img id="belizeImage" src="noton2(1).png" alt="noton" width="400" height="86" align="center">
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">Back to Home</a>
 </section>
-</center>
-
-
 
 <footer>
-  <p>@ Powered by Martita De La Fuente</p>
+    <p>@ Powered by Martita De La Fuente</p>
 </footer>
 
 </body>
