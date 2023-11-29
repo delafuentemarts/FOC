@@ -20,7 +20,7 @@
             padding-right: 40px;
             padding-left: 40px;
             padding-bottom: 40px;
-            filter: brightness(150%); /* Lighten the image */
+            filter: brightness(150%) hue-rotate(90deg); /* Lighten the image and change the color to yellow-green */
         }
 
         section {
@@ -90,4 +90,18 @@
 
 <a href="index.html">Back to Home</a>
 
-<foote
+<footer>
+    <p>@ Powered by Martita De La Fuente</p>
+</footer>
+
+<script>
+    function decToASCII() {
+        x = document.getElementById("inputdec").value;
+        var res = String.fromCharCode(x);
+        document.getElementById("demo").innerHTML = res;
+        console.log(res);
+    }
+</script>
+
+</body>
+</html>
