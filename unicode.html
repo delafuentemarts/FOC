@@ -1,63 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {
-    background-color: #343a40; /* Darkish color */
-    color: #ffffff; /* White text on dark background */
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
 
-  section {
-    text-align: center;
-    margin: 20px;
-  }
-
-  h2 {
-    color: #007bff; /* Primary color */
-  }
-
-  hr {
-    border: 1px solid #007bff; /* Primary color */
-    width: 50%;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-
-  input {
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-
-  button {
-    background-color: #007bff; /* Primary color */
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #0056b3; /* Darker primary color on hover */
-  }
-
-  table {
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  footer {
-    background-color: #343a40; /* Darkish color */
-    color: #ffffff; /* White text on dark background */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
 </style>
+</head>
+<body>
+
+<section>
+<h2>Project 1: UNICODE</h2>
+<hr>
+
+<center>
+<p>Please input UNICODE number:</p>
+
+<input id="numb" type="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<br>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+ 
+  <tr>
+    <th><center><p id="demo"></center></p></th>
+  </tr>
+  
+</table>
+
+
+<p><img src="uni1.jpg" style="width:700px;height:400px;"></p>
+<p><img src="uni3.jpg" style="width:700px;height:400px;"></p>        
+<p><img src="uni4.jpg" style="width:700px;height:400px;"></p>  			
+
+<p></p>
+<p></p>         
+
+<br>
+
+
+</center>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  
+    text = x;
+    unicode = ("&#x" + x)
+  
+  document.getElementById("demo").innerHTML = unicode;
+}
+</script>
+
+
+</section>
+
+
+<a href="index.html">Back to Home</a></h3>
+
+<footer>
+  <p>@ Powered by Martita De La Fuente</p>
+</footer>
+
+</body>
+</html>
